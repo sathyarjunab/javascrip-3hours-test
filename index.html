@@ -6,27 +6,21 @@
     <title>Document</title>
   </head>
   <body>
-    <form>
-      <label>
-        name:
-        <input type="text" name="name" id="name" />
-      </label>
-      <label>
-        description:
-        <input type="text" name="description" id="description" />
-      </label>
-      <label>
-        choose your car:
-        <select id="cars" name="car">
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="vw">VW</option>
-          <option value="audi">Audi</option>
-        </select>
-      </label>
-      <button type="submit">add me</button>
+    <form id="expenseForm">
+      <label for="amount">Choose Expense Amount:</label>
+      <input type="text" name="amount" id="amount" />
+      <label for="amount">Choose description</label>
+      <input type="text" name="description" id="description" />
+      <label for="category">Choose a category:</label>
+      <select name="category" id="category">
+        <option value="fuel">Fuel</option>
+        <option value="food">Food</option>
+        <option value="electricity">Electricity</option>
+        <option value="movie">Movie</option>
+      </select>
+      <button type="submit">Add Expense</button>
     </form>
-    <ul id="list"></ul>
+    <ul class="ulist"></ul>
   </body>
-  <script src="./index.js"></script>
+  <script src="index.js"></script>
 </html>
